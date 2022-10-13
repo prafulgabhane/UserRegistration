@@ -9,11 +9,11 @@ namespace UserResgistration
 {
     public class RegexPattern
     {
-        //UC-1 Program to enter valid first name format.
+        //UC-2 Program to enter valid last name format.
         
         public static void FirstName()
         {
-            string[] arr = { "Praful", "praful", "pr12", "PRaful123", "12345" }; 
+            string[] arr = { "Gabhane", "gabhane", "GABHANE", "ga12", "12345" }; 
             string pattern = "^[A-Z][a-z]{3}";
 
             foreach (string input in arr)
