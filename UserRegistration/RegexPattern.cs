@@ -9,17 +9,53 @@ namespace UserResgistration
 {
     public class RegexPattern
     {
-        //UC-2 Program to enter valid last name format.
-        
+        //UC-3 Program to enter valid email format.
+
         public static void FirstName()
         {
-            string[] arr = { "Gabhane", "gabhane", "GABHANE", "ga12", "12345" }; 
+            string[] arr = { "Praful", "praful", "pr12", "PRaful123", "12345" };
             string pattern = "^[A-Z][a-z]{3}";
 
             foreach (string input in arr)
             {
                 //IsMatch(String, String, RegexOptions)
 
+                if (Regex.IsMatch(input, pattern))
+                {
+                    Console.WriteLine("{0} is valid", input);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is Invalid", input);
+                }
+            }
+        }
+        public static void Lastname()
+        {
+            string[] arr = { "Gabhane", "gabhane", "GABHANE", "ga12", "12345" };
+            string pattern = "^[A-Z][a-z]{3}";
+
+            foreach (string input in arr)
+            {
+                //IsMatch(String, String, RegexOptions)
+
+                if (Regex.IsMatch(input, pattern))
+                {
+                    Console.WriteLine("{0} is valid", input);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is Invalid", input);
+                }
+            }
+        }
+        public static void Email()
+        {
+            string[] arr = { "prafulgabhane786@gmail.com", "prafulgabhane", "p@g.in", "praful@gmail" };
+            string pattern = @"^[a-z0-9_\-\.]+[@][a-z]+[\.][a-z]";
+
+            foreach (string input in arr)
+            {
                 if (Regex.IsMatch(input, pattern))
                 {
                     Console.WriteLine("{0} is valid", input);
