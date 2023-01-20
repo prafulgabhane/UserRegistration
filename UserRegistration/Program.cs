@@ -15,7 +15,7 @@ namespace UserResgistration
             RegexPattern.PhoneNumber();
 
             Console.WriteLine("\nUser Registration Program Ends");
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
     }
 }
